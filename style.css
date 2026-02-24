@@ -1,0 +1,246 @@
+:root {
+    --primary: #8a2be2;
+    --gradient: linear-gradient(135deg,#8a2be2,#5f0fff);
+    --bg: #0e0e18;
+    --card: #17172a;
+    --text: #f5f5f5;
+    --muted: #b0b0c3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(14,14,24,0.95);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--muted);
+}
+
+nav a:hover {
+    color: white;
+}
+
+.hero {
+    padding: 150px 0 100px 0;
+}
+
+.hero h1 {
+    font-size: 38px;
+}
+
+.hero span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    margin: 20px 0;
+    color: var(--muted);
+    max-width: 600px;
+}
+
+.btn {
+    background: var(--gradient);
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+section {
+    padding: 100px 0;
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+.skills span {
+    display: inline-block;
+    background: rgba(138,43,226,0.2);
+    padding: 8px 15px;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.card {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 28px;
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    color: var(--muted);
+}
+
+.projeto {
+    margin-bottom: 40px;
+}
+
+.tecnologias span {
+    display: inline-block;
+    background: rgba(138,43,226,0.2);
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 5px 5px 0 0;
+    font-size: 12px;
+    border: 1px solid rgba(138,43,226,0.4);
+}
+
+.destaque {
+    border: 1px solid rgba(138,43,226,0.5);
+}
+
+.em-breve {
+    margin-top: 15px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.skills-section h3 {
+    margin-bottom: 12px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.btn-cv {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #6c63ff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.btn-cv:hover {
+    background-color: #5848d6;
+    transform: translateY(-2px);
+}
+
+.card {
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid #2a2a2a;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    border-color: #6c63ff;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.social-fixed {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 999;
+}
+
+.social-fixed a {
+    width: 55px;
+    height: 55px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 24px;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.social-fixed a:hover {
+    transform: translateY(-5px);
+    background-color: #6c63ff;
+}
